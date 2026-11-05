@@ -1,6 +1,6 @@
 ---
 name: "bakit-2d-explainer"
-description: "Director skill for Manny's Tagalog 2D cartoon channel: plan, script, shot-list and style a viral-ready 'Bakit nga ba?' / 'Paano' explainer (4–8 min YouTube + Shorts cutdowns), then hand off to the HeyGen + Higgsfield + ffmpeg pipeline. Use this whenever Manny or Ken mentions the bakit channel, a 2D or cartoon explainer, Lia and Robo, topic ideas for the channel, a how-to or 'why' video in Tagalog, making the channel viral or more engaging, or wants a script, shot list, hook, title or thumbnail for an animated video — even if they don't say 'skill' or 'bakit'."
+description: "Director skill for Manny's Tagalog 2D cartoon channel: plan, script, shot-list and style a viral-ready 'Bakit nga ba?' / 'Paano' explainer (4–8 min YouTube + Shorts cutdowns), then hand off to the HeyGen + Higgsfield + ffmpeg pipeline. Use this whenever Manny or Ken mentions the bakit channel, a 2D or cartoon explainer, Lia and Robo, topic ideas for the channel, a how-to or 'why' video in Tagalog, making the channel viral or more engaging, a content calendar or month plan for the channel, what to post next, or wants a script, shot list, hook, title or thumbnail for an animated video — even if they don't say 'skill' or 'bakit'."
 ---
 
 # Bakit 2D Explainer — the director skill
@@ -28,6 +28,7 @@ Write to Manny in plain, grade-5 Tagalog or Taglish. Short sentences. If a claim
 
 | Step | Output | Reference to open |
 |---|---|---|
+| 0. Find and rank ideas (weekly/monthly) | Topic bank rows + month plan | `references/ideation-pipeline.md`, `scripts/topic_bank.py` |
 | 1. Pick the topic | 1 chosen question + score card | `references/topic-and-hook-playbook.md` |
 | 2. Write the hook and script | Clean voiceover script, 600–1,200 words | `references/script-structure.md` |
 | 3. Shot plan | Shot table (ANIMATE/STILL), pacing check, credit estimate | `scripts/shot_planner.py` |
@@ -35,6 +36,16 @@ Write to Manny in plain, grade-5 Tagalog or Taglish. Short sentences. If a claim
 | 5. Produce | Voice, avatar, images, clips, edit | `references/production-pipeline.md` |
 | 6. Package | 3 titles, thumbnail text, 2 Shorts cutdowns, description | `references/topic-and-hook-playbook.md` (titles section) |
 | 7. Review after 7 days | What to change next time | "After publishing" below |
+
+### Step 0 — Find and rank ideas
+
+When Manny asks for ideas, a calendar, or "ano ang susunod," run the pipeline in `references/ideation-pipeline.md`: fill the pool from five sources (client and viewer questions, competitor breakouts, search autocomplete, the Filipino calendar, Manny's ads lane), reshape every idea into a familiar-thing-plus-contradiction question, score it, check demand on the top eight, and build the month for mix (about 60% evergreen, 20% ads lane, 20% seasonal) and segment rotation. The bank lives in `assets/topic-bank.csv`; rank it and check a month with:
+
+```
+python3 scripts/topic_bank.py assets/topic-bank.csv --month 2026-12
+```
+
+Present the plan with one hook per pick and ask for approval of topics and hooks together. Refuse trend-jacking: a cartoon takes days, so the trend is gone by post day and it brings the wrong viewers.
 
 ### Step 1 — Pick the topic (the part that actually makes videos travel)
 
@@ -78,7 +89,7 @@ Seven days after a video goes live, ask Manny for three numbers from YouTube Stu
 - Dip at a specific beat: that beat lacked a payoff or had a 10+ second static stretch. Check the shot plan for it.
 - Average view percentage above 50% on a 5-minute video is strong for this format. Say so plainly.
 
-Record the result as one line in the topic bank (topic, CTR, AVP, lesson) so the next scoring run is smarter.
+Fill the row in `assets/topic-bank.csv` (ctr, avp, lesson, status posted) and run `python3 scripts/topic_bank.py assets/topic-bank.csv --review` so next month's plan leans on what actually worked.
 
 ## Budget (tell Manny before starting)
 

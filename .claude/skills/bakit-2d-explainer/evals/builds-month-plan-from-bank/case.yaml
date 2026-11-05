@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: builds-month-plan-from-bank
+expected_outcome: |
+  An 8-slot December plan built from the bank plus new scored ideas: deadline rows first,
+  about 60/20/20 evergreen/ads/seasonal, sari-sari, online-seller and food-cart each in the
+  first four slots, one non-slop hook per pick, a mix check with any warnings explained, the
+  killed aswang row left killed with its reason restated, and a request for approval of
+  topics and hooks together. New ideas carry a shape, segment, lane, source and 5-axis score.
+context:
+  scaffold_script: place-files.sh
