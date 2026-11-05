@@ -8,6 +8,7 @@ Read at Step 2. The structure exists to keep viewers past the two places they le
 - Tagalog with natural Taglish for business words (budget, ads, profit). Say numbers the way people say them: "isang milyon," not "1,000,000."
 - Grade-5 words. One idea per sentence. Read it aloud in your head; if you run out of breath, split it.
 - Clean voiceover only: no headings, no scene notes, no "(pause)". Scene notes live in the shot plan.
+- One narrator voice (Manny's clone). Lia and Robo act on screen; the narrator tells us what they say ("Tanong ni Lia: bakit?"). No `LIA:` / `ROBO:` speaker labels, because HeyGen reads the script as one voice and a label would be spoken aloud.
 
 ## The 8 beats
 

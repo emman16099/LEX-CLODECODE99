@@ -62,7 +62,7 @@ Pick one. All plant the contradiction before the viewer can scroll.
 4. **Tanong ni Lia.** Lia asks the exact question a viewer would, Robo says "Hindi mo gugustuhing malaman." Cut to title.
 5. **Pangako ng gamit.** "Sa dulo nito, alam mo na kung paano hindi maloko sa susunod na 11.11."
 
-Banned: "Hindi X ang problema, Y pala", "Akala mo X? Hindi.", fake urgency, questions you never answer, and any hook that promises a secret the script does not deliver.
+Banned as hooks: "Hindi X ang problema, Y pala", "Akala mo X? Hindi.", fake urgency, questions you never answer, and any hook that promises a secret the script does not deliver. A "hindi ang puno, kundi ang panahon" reframe is fine once as a mid-script payoff; it becomes slop when it is the opening or appears in every beat.
 
 ## Title formulas (Step 6, write 3)
 
