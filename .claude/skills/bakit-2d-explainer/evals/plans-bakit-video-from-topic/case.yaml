@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: plans-bakit-video-from-topic
+expected_outcome: |
+  A full pre-production plan: a 5-axis topic score, a clean Tagalog/Taglish voiceover
+  script of roughly 700-800 words that opens with the contradiction in the first
+  sentence or two, promises a money/business payoff, explains three reasons each with
+  a mini-payoff and bridge question, and ends with a one-sentence answer and CTA; a
+  shot table with ANIMATE/STILL marks at about 25-30% animated; and 10 image prompts
+  that name the character sheet, flat 2D style, the house palette and a Pinoy prop.
+  No media is generated. No "Hindi X ang problema, Y pala" style hook.

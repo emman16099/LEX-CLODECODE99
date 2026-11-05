@@ -1,0 +1,8 @@
+schema_version: "1.1"
+name: ranks-topic-ideas-for-channel
+expected_outcome: |
+  Ten Tagalog "Bakit/Paano" topic ideas for small-business owners, each with a
+  5-axis score and total, ranked; a clear pick of the top 3 with reasons tied to
+  the funnel (money, negosyo, ads) and the familiar-plus-contradiction shape; and a
+  frank, data-backed pushback on the aswang idea (off-funnel, low score) while
+  still offering a nearby higher-scoring alternative if one exists.

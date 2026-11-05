@@ -1,0 +1,10 @@
+schema_version: "1.1"
+name: builds-shot-list-from-timestamps
+expected_outcome: |
+  A shot table built from the timestamps: shots of about 3-6 seconds split at
+  sentence/clause boundaries, exact frame counts that sum to the voice length at
+  24 fps, 25-30% of shots marked ANIMATE including the first and last, a concrete
+  picture idea per shot that names a Pinoy prop and alternates framing, and a credit
+  estimate (0.25 per still, 1.5 per animated second) stated before any generation.
+context:
+  scaffold_script: place-files.sh
