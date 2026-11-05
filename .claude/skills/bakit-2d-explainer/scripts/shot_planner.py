@@ -92,14 +92,19 @@ def split_shots(words, target, min_len, max_len):
         elif ends_clause and length(cur) >= target:
             close()
         elif length(cur) >= max_len:
-            # back up to the latest break that keeps the shot >= min_len
+            # Back up to the latest break that keeps the shot >= min_len; if
+            # the only break is earlier, accept one >= 2 s (a short insert
+            # beats a 10 s static stretch); past the 7.5 s hard cap, cut anyway.
             cut = None
-            for j in range(len(cur) - 2, -1, -1):
-                if cur[j]["word"].endswith(SENTENCE_END + CLAUSE_END) and length(cur[:j + 1]) >= min_len:
-                    cut = j
+            for floor in (min_len, 2.0):
+                for j in range(len(cur) - 2, -1, -1):
+                    if cur[j]["word"].endswith(SENTENCE_END + CLAUSE_END) and length(cur[:j + 1]) >= floor:
+                        cut = j
+                        break
+                if cut is not None:
                     break
-            if cut is None and length(cur) < 10:
-                continue  # no clean break yet; a slightly long shot beats a mid-phrase cut
+            if cut is None and length(cur) < 7.5:
+                continue
             close(cut)
 
     if len(shots) > 1 and shots[-1] and length(shots[-1]) < min_len * 0.6:
