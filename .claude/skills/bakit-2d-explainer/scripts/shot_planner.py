@@ -7,6 +7,9 @@ Usage:
                             [--out shots.json] [--md shots.md]
     python3 shot_planner.py --demo            # runs on built-in sample data
 
+If the JSON has a top-level "duration" (HeyGen does), the last shot runs to that
+length so the picture track matches the audio track, trailing silence included.
+
 Input: a JSON file that is either a list of {"word","start","end"} objects
 (HeyGen create_speech word_timestamps), or an object with a "word_timestamps"
 key holding that list. Times are seconds.
@@ -20,6 +23,8 @@ What it does:
     strongest sentence-ending shots spread across the video until the ratio is
     met. Reasoning: a change of motion at the start, the end and the payoffs is
     where it pays; the rest can be a still with a slow zoom;
+  * suggests a framing per shot (wide / medium / insert / label card / split)
+    and alternates background A/B so neighbouring shots never look the same;
   * warns on any shot longer than 10 s (viewers leave during static stretches)
     and on ANIMATE shots over 10 s (Kling clip limit);
   * estimates Higgsfield credits (0.25 per still, 1.5 per animated second).
@@ -34,9 +39,13 @@ CLAUSE_END = (",", ";", ":")
 
 
 def load_words(path):
+    """Return (words, duration). duration is the file's own audio length when it
+    has one (HeyGen includes trailing silence there); else the last word's end."""
     with open(path, encoding="utf-8") as f:
         data = json.load(f)
+    duration = None
     if isinstance(data, dict):
+        duration = data.get("duration")
         data = data.get("word_timestamps") or data.get("words") or []
     words = []
     for w in data:
@@ -46,7 +55,7 @@ def load_words(path):
         words.append({"word": text, "start": float(w["start"]), "end": float(w["end"])})
     if not words:
         sys.exit("No words found in input.")
-    return words
+    return words, float(duration) if duration else None
 
 
 def split_shots(words, target, min_len, max_len):
@@ -98,9 +107,11 @@ def split_shots(words, target, min_len, max_len):
     return shots
 
 
-def build_plan(words, target=4.5, min_len=3.0, max_len=6.0, animate_ratio=0.28, fps=24):
+def build_plan(words, target=4.5, min_len=3.0, max_len=6.0, animate_ratio=0.28, fps=24, duration=None):
     groups = split_shots(words, target, min_len, max_len)
-    total_end = words[-1]["end"]
+    # The last shot runs to the end of the audio file, not the last word, so the
+    # edit matches the voice track exactly (HeyGen leaves trailing silence).
+    total_end = max(duration or 0.0, words[-1]["end"])
     plan = []
     for idx, g in enumerate(groups):
         start = g[0]["start"] if idx else 0.0
@@ -115,6 +126,8 @@ def build_plan(words, target=4.5, min_len=3.0, max_len=6.0, animate_ratio=0.28, 
             "line": " ".join(w["word"] for w in g),
             "ends_sentence": g[-1]["word"].endswith(SENTENCE_END),
             "mode": "STILL",
+            "framing": "",
+            "background": "A" if idx % 2 == 0 else "B",
             "picture_idea": "",
         })
 
@@ -130,6 +143,12 @@ def build_plan(words, target=4.5, min_len=3.0, max_len=6.0, animate_ratio=0.28, 
             chosen.add(s["shot"] - 1)
     for i in chosen:
         plan[i]["mode"] = "ANIMATE"
+
+    # Suggest a framing rotation so no two neighbours share one (the style
+    # bible's variety rule). The director can overwrite any of these.
+    rotation = ["wide", "medium", "insert", "label card", "medium", "insert", "split"]
+    for i, s in enumerate(plan):
+        s["framing"] = "medium" if i == 0 else rotation[i % len(rotation)]
 
     warnings = []
     for s in plan:
@@ -165,12 +184,12 @@ def to_markdown(result):
         lines.append("## Warnings")
         lines += [f"- {w}" for w in result["warnings"]]
         lines.append("")
-    lines.append("| # | Start | End | s | Frames | Mode | Voice line | Picture idea |")
-    lines.append("|---|---|---|---|---|---|---|---|")
+    lines.append("| # | Start | End | s | Frames | Mode | Framing | BG | Voice line | Picture idea |")
+    lines.append("|---|---|---|---|---|---|---|---|---|---|")
     for s in result["shots"]:
-        lines.append(f"| {s['shot']} | {s['start']} | {s['end']} | {s['seconds']} | {s['frames']} | {s['mode']} | {s['line']} | {s['picture_idea']} |")
+        lines.append(f"| {s['shot']} | {s['start']} | {s['end']} | {s['seconds']} | {s['frames']} | {s['mode']} | {s['framing']} | {s['background']} | {s['line']} | {s['picture_idea']} |")
     lines.append("")
-    lines.append("Fill the Picture idea column: one clear thing to look at per shot, a Pinoy prop in every frame, alternate framing (wide / medium / insert / label card / split).")
+    lines.append("Fill the Picture idea column: one clear thing to look at per shot, a Pinoy prop in every frame. Framing and BG (A = warm cream, B = sky blue) are suggestions that already alternate; change them when the story needs it, e.g. switch BG when the script turns from problem to answer.")
     return "\n".join(lines)
 
 
@@ -202,14 +221,15 @@ def main():
     ap.add_argument("--demo", action="store_true", help="run on built-in sample")
     a = ap.parse_args()
 
+    duration = None
     if a.demo:
         words = demo_words()
     elif a.timestamps:
-        words = load_words(a.timestamps)
+        words, duration = load_words(a.timestamps)
     else:
         ap.error("give a timestamps file or --demo")
 
-    result = build_plan(words, a.target, a.min_len, a.max_len, a.animate_ratio, a.fps)
+    result = build_plan(words, a.target, a.min_len, a.max_len, a.animate_ratio, a.fps, duration)
     if a.out:
         with open(a.out, "w", encoding="utf-8") as f:
             json.dump(result, f, ensure_ascii=False, indent=2)

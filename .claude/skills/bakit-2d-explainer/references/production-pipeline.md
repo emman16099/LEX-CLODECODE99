@@ -9,7 +9,7 @@ Read at Step 5. This extends the proven 1:40 pipeline in `avatar-cartoon-explain
 ## 1. Voice
 
 - `create_speech`, approved script, language en (Tagalog text reads fine), voice Manny's clone `9388964b4a1c43a2943be382c72ddb56` (default; ask once, then reuse) or `3cbd072a1d2b4e799429570916f53e51`.
-- Keep `audio_url`, `duration`, `word_timestamps`. Save the timestamps as JSON for the planner.
+- Keep `audio_url`, `duration`, `word_timestamps`. Save them as one JSON file `{"duration": ..., "word_timestamps": [...]}` for the planner; the duration includes trailing silence, so the picture track ends exactly with the audio.
 - Listen check: ask Manny to play the first 30 s before you spend Higgsfield credits. A mispronounced brand name is cheap now and expensive later.
 
 ## 2. Avatar
