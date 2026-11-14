@@ -1,5 +1,5 @@
 ---
-name: explainer-capcut-edit
+name: video-edit-kallaway-style
 description: Plan and prep a vertical talking-head explainer edit in the "graphic on top, speaker inset below" style studied from a Kallaway Marketing short, split between Claude (edit plan, on-screen text, title-card PNGs) and the user (cutting and assembling in CapCut). Use when the user wants to edit a Reel/Short/TikTok "in the Kallaway style", asks for a CapCut edit plan, shot list, B-roll/graphic plan, title cards, or wants their talking-head video to look like an explainer with graphics.
 ---
 
