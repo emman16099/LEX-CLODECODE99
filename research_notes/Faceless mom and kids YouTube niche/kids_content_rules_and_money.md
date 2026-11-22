@@ -1,0 +1,116 @@
+# Kids (Made-for-Kids) YouTube Content: Rules and Money (faceless/animated long-form focus)
+
+Research date: 2026-11-22. Method note: most primary pages (support.google.com, ftc.gov, air.io, kidscreen.com, dexerto.com) could NOT be fetched in this session (blocked by network allowlist), so findings below rely on search-result snippets from those pages and from news coverage. Figures quoted from snippets should be spot-checked against the full source before publication. Labels: [FACT] = official/primary or widely corroborated; [ESTIMATE] = third-party estimate, sample, or anecdote.
+
+## 1. What the 2019 FTC/COPPA settlement changed for made-for-kids (MFK) content from Jan 2020, and reported revenue drops
+
+### Takeaway
+The Sept 4, 2019 FTC/NY AG settlement ($170M) forced YouTube to make creators label content "made for kids"; since Jan 6, 2020 MFK videos get only contextual (non-personalized) ads and lose comments, notifications, end screens/cards, memberships, live chat, miniplayer and more. Creator-reported revenue losses are commonly put at ~50% on average, with 60-90% in worst-case/experiment figures; YouTube never published a number.
+
+### Cited Findings
+- [FACT] Sept 4, 2019: Google and YouTube agreed to pay a record $170M ($136M to the FTC, $34M to New York AG) over alleged COPPA violations (collecting data from viewers of child-directed channels for ads without parental consent). — [FTC press release](https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law)
+- [FACT] The order required YouTube to build a system letting channel owners designate child-directed content so YouTube can comply with COPPA, plus annual COPPA training for staff dealing with channel owners. — [FTC press release](https://www.ftc.gov/news-events/news/press-releases/2019/09/google-youtube-will-pay-record-170-million-alleged-violations-childrens-privacy-law)
+- [FACT] FTC Chairman Simons: the $170M was 30x larger than any prior COPPA civil penalty. Vote was 3-2; Commissioners Chopra and Slaughter dissented (Chopra: no individual accountability). — [Simons remarks (FTC PDF)](https://FTC.GOV/system/files/documents/public_statements/1543118/simons_remarks_youtube_settlement_press_conference.pdf); [IAPP](https://iapp.org/news/a/ftc-touts-historic-youtube-settlement-as-game-changer-for-coppa-enforcement); [Axios](https://www.axios.com/2019/09/04/ftc-unveils-170-million-youtube-settlement)
+- [FACT] YouTube's announcement "Better protecting kids' privacy on YouTube" (rollout Jan 2020): data from anyone watching MFK content is treated as coming from a child; personalized ads removed; creators must set audience for channel/videos. — [YouTube Official Blog](https://blog.youtube/news-and-events/better-protecting-kids-privacy-on-YouTube); [Engadget, Jan 6 2020](https://www.engadget.com/2020/01/06/youtube-made-for-kids-content-rollout); [Tubefilter, Jan 7 2020](https://www.tubefilter.com/2020/01/07/youtube-disables-more-product-features-kid-oriented-content/amp/)
+- [FACT] Features unavailable on MFK content per YouTube Help Center: personalized ads, comments, notifications (bell), autoplay on home, cards or end screens, channel memberships, live chat (and live chat donations), donate button, Super Chat/Super Stickers, merch shelf/ticketing-type features, playback in miniplayer, "save to playlist"/watch later. Ads are contextual only, and some ad categories are not served at all. — [YouTube Help: Watching "made for kids" content](https://support.google.com/youtube/answer/9632097?hl=en); [YouTube Help: Set your channel or video's audience](https://support.google.com/youtube/answer/9527654)
+- [FACT] YouTube's position: creators are legally responsible for setting audience correctly; YouTube may override mis-set audiences; MFK designation "may result in a decrease in revenue for some creators" (no figure given). — [YouTube Help: Set audience](https://support.google.com/youtube/answer/9527654); via [Kidscreen 2025](https://kidscreen.com/2025/10/27/how-kids-creators-are-making-youtube-work-again/)
+- [ESTIMATE] Grégory Dray (Animaj co-founder, at YouTube Kids at the time): kids creators lost ~50% of their YouTube earnings on average after the change; YouTube launched a 3-year, US$100M fund for original kids content. — [Kidscreen, Oct 27 2025](https://kidscreen.com/2025/10/27/how-kids-creators-are-making-youtube-work-again/)
+- [ESTIMATE] A creator experiment cited in academic work found disabling personalized ads cut revenue by 60%-90%. The same 60-90% range appears in Garrett A. Johnson et al.'s "COPPAcalypse? The YouTube settlement's impact on kids content" (paper hosted by FTC). — [Houston Law Review](https://houstonlawreview.org/article/22277-it-s-coppa-cated-protecting-children-s-privacy-in-the-age-of-youtube); [COPPAcalypse paper (FTC PDF)](https://www.ftc.gov/system/files/ftc_gov/pdf/COPPAcalypse-the-YouTube-settlements-impact-on-kids-content-garrett-a.-johnson.pdf)
+- [ESTIMATE] Guides claim contextual ads pay 50-80% less per view than personalized; one blog claims >95% drops in anecdotal cases (low reliability). — [MakeInfluence](https://www.makeinfluence.com/en/academy/youtubes-made-for-kids-coppa-classification-what-it-does-to-ad-revenue); [Pastory](https://pastory.app/articles/making-money-youtube-kids-channel/)
+- [FACT] Updated US COPPA Rule: final amendments published Apr 22, 2025; effective June 23, 2025; compliance deadline Apr 22, 2026 (new consent-management and data-retention requirements; separate opt-in parental consent for disclosing kids' data to third parties such as for targeted ads is widely reported). Feb 25, 2026: FTC policy statement limiting enforcement when kids' data is used only for age verification. — [Federal Register](https://www.federalregister.gov/documents/2025/04/22/2025-05904/childrens-online-privacy-protection-rule); [Davis Polk](https://www.davispolk.com/insights/client-update/ftc-prioritizes-coppa-enforcement-new-compliance-obligations-take-effect); [Toy Association](https://www.toyassociation.org/PressRoom2/News/2026-News/updated-coppa-rule-requirements-take-effect-april-22.aspx)
+
+### Inferences
+- For a faceless/animated kids channel, MFK status removes almost every audience-retention and community lever (no notifications, no end screens to chain videos, no comments), making discovery dependent on search/suggested/YouTube Kids and on long watch-time compilations.
+- Contextual-only ads remain the main reason kids RPMs are the lowest on the platform (see Section 2).
+- Global note: the COPPA mechanism is US law, but YouTube applies the MFK designation and its feature restrictions worldwide; other regimes (UK Age Appropriate Design Code, EU GDPR/DSA minors' rules) add obligations but were not researched in depth here.
+
+### Gaps
+- Could not fetch the Johnson "COPPAcalypse" paper to extract its exact measured effects (supply of kids videos, views, ad revenue changes); only the 60-90% scenario figure surfaced.
+- FTC's 2019 statement that individual channel owners can face civil penalties (widely cited as up to ~$42,530 per violation at the time; inflation-adjusted higher now) was not verified in this session.
+- Whether MFK Shorts get the Shorts revenue-share treatment and exact current Shorts restrictions on MFK were not confirmed from a primary source.
+
+## 2. CPM/RPM ranges for MFK/kids content vs other niches (2023-2026)
+
+### Takeaway
+Kids content is consistently the lowest-paying YouTube niche. The best measured dataset (AIR Media-Tech, 300 channels, May 2025-May 2026) puts Kids & Teens median RPM at ~$0.33 and Studio CPM ~$1.59, vs $10.22 RPM for Education & Science (31x spread). Other guides give $0.40-$4 ranges, but these are generic estimates.
+
+### Cited Findings
+- [ESTIMATE, measured sample] AIR Media-Tech (300 monetized channels, May 2025-May 2026): median RPM ranges from $0.33 (Kids & Teens, lowest) to $10.22 (Education & Science), a 31x spread; Kids & Teens median Studio CPM $1.59 vs $5.91 for Education & Science; low kids figures attributed to no personalized ads on MFK. Some niches have <10 channels (directional only). — [AIR Media-Tech: RPM by niche 2026](https://air.io/en/air-data-findings/which-youtube-niche-makes-the-most-money-in-2026-ranked-by-real-rpm-and-cpm); [AIR: RPM real data from 300 channels](https://air.io/en/air-data-findings/how-much-does-youtube-really-pay-in-2026-real-rpm-data-from-300-channels)
+- [ESTIMATE] Other 2026 guides: kids content CPM ~$1-$4 regardless of topic; kids RPM ~$0.40-$1.60; "Kids content (YouTube Kids): $1-$3 RPM with restricted ad categories." — [1of10 CPM/RPM tables](https://www.1of10.com/blog/youtube-cpm-rpm-by-niche/); [WildandFreeTools RPM by niche](https://wildandfreetools.com/blog/youtube-rpm-niche-complete-guide/); [OutlierKit niches guide](https://outlierkit.com/resources/youtube-niches-guide/)
+- [ESTIMATE] vidIQ's niche CPM/RPM guide (2026) ranks finance/business/tech high; kids is among the lowest (exact kids figure not captured in snippet). — [vidIQ: Highest-paying niches 2026](https://vidiq.com/blog/post/most-profitable-youtube-niches/); [vidIQ: YouTube CPM factors](https://vidiq.com/blog/post/youtube-cpm/)
+
+### Inferences
+- At ~$0.33-$1.60 RPM, 1M long-form MFK views/month ~= $330-$1,600/month in AdSense; the business model only works at very high view volumes (tens to hundreds of millions of monthly views) or with off-platform revenue.
+- Long compilations (30-60+ min) with mid-rolls partially offset low RPM, which is why the top preschool channels upload long compilations.
+
+### Gaps
+- No primary YouTube data on MFK CPM/RPM. No TubeBuddy or Influencer Marketing Hub kids-specific CPM numbers surfaced in searches.
+- Geographic split (US vs India/LatAm kids audiences, which dominate many nursery-rhyme channels) not quantified.
+
+## 3. YouTube Kids app and its effect on views/revenue
+
+### Takeaway
+YouTube Kids is a curated separate app; inclusion depends on MFK status and quality standards, and in 2026 YouTube says AI content in the app is limited to "a small set of high-quality channels." Losing YPP also means losing YouTube Kids eligibility. No reliable 2025-2026 user/revenue figures for the app were found.
+
+### Cited Findings
+- [FACT] After the NYT (Feb 2026) shared five AI-kids channels, YouTube suspended all five from YPP, which meant losing ad revenue AND YouTube Kids access; it also removed three hyperrealistic videos from the Kids app. — [Digital Trends](https://www.digitaltrends.com/social-media/investigation-finds-youtube-is-serving-mindless-ai-slop-to-toddlers-and-preschoolers/); [NYT via The Star, Mar 2026](https://www.thestar.com.my/tech/tech-news/2026/03/11/how-ai-generated-videos-are-distorting-your-childs-youtube-feed)
+- [FACT] YouTube spokesperson Boot Bullwinkle (Apr 2026): YouTube has "high standards" for YouTube Kids, "including limiting AI-generated content in the app to a small set of high-quality channels." — [Fortune, Apr 1 2026](https://www.fortune.com/2026/04/01/ai-slop-200-organizations-letter-youtube-google); [Tubefilter](https://www.tubefilter.com/2026/04/01/youtube-fairplay-kids-ai-open-letter/)
+- [FACT] YouTube's teen/family features context (YouTube blog). — [YouTube blog: A decade of building for teens and families](https://blog.youtube/inside-youtube/a-decade-of-building-for-teens-and-families/)
+- [FACT, context] YouTube overall: ~$60B+ revenue in 2025, ~$40.4B ads (+11.7% YoY) per WARC. — [Podnews/WARC](https://podnews.net/press-release/youtube-platform-warc)
+
+### Inferences
+- YouTube Kids views are monetized under the same contextual-ad MFK model; the app matters mainly as a distribution/eligibility gate, and inclusion is increasingly quality-gated (especially for AI content).
+
+### Gaps
+- No current (2025-2026) YouTube Kids MAU, share of MFK views coming from the Kids app, or revenue split were found from reliable sources.
+
+## 4. 2025-2026 "inauthentic / mass-produced / repetitive" policy and AI kids content; Elsagate history
+
+### Takeaway
+Elsagate (2017) produced YouTube's first mass purge of kids content; the July 15, 2025 YPP update renamed "repetitious" to "inauthentic" content; and in 2026 a NYT investigation, a Fairplay open letter, and purges of large AI-slop channels put AI-generated kids content squarely in the enforcement zone. YouTube says it isn't banning AI, but mass-produced/templated content without meaningful human input is non-monetizable.
+
+### Cited Findings
+Elsagate (2017):
+- [FACT] Nov 2017: YouTube removed ads from nearly 2M videos and 50,000+ channels "masquerading as family-friendly content"; terminated 270+ accounts and removed 150,000+ videos in a week; turned off comments on 625,000+ videos targeted by predators; terminated 50+ channels under updated guidelines. Separately said it had demonetized 3M such videos since June 2017 (total ~5M). — [Vice News](https://news.vice.com/story/youtube-kills-ads-on-50000-channels-as-advertisers-flee-over-disturbing-child-content); [9to5Google](https://9to5google.com/2017/11/28/youtube-sexualised-child-imagery-response/); [Tubefilter Nov 2017](https://www.tubefilter.com/2017/11/23/youtube-kids-blog-post/amp/); [IBTimes](https://www.ibtimes.co.uk/elsagate-youtube-purge-disturbing-child-exploitation-videos-website-1648642); [Wikipedia: Elsagate](https://en.wikipedia.org/wiki/Elsagate)
+- [ESTIMATE] Gizmodo (from an internal-history book) says YouTube deleted hundreds of thousands of videos and 150 channels outright — channel counts differ across reports. — [Gizmodo](https://gizmodo.com/youtube-elsagate-kids-videos-like-comment-subscribe-1849501198)
+
+July 2025 YPP update:
+- [FACT] Effective July 15, 2025, YPP's "repetitious content" policy was renamed "inauthentic content"; definition: mass-produced or repetitive content often perceived as spam. Creator liaison Rene Ritchie called it a "minor update"; such content was already ineligible. Examples: channels uploading narrated stories with only superficial differences; slideshows reusing narration. Reaction/commentary/clip channels not specifically targeted. — [TechCrunch, Jul 9 2025](https://techcrunch.com/2025/07/09/youtube-prepares-crackdown-on-mass-produced-and-repetitive-videos-as-concern-over-ai-slop-grows); [Search Engine Journal](https://www.searchenginejournal.com/youtube-targets-mass-produced-content-in-monetization-update/550337/); [Social Media Today](https://www.socialmediatoday.com/news/youtube-clarifies-monetization-update-inauthentic-repeated-content/752892/); [Tubefilter](https://www.tubefilter.com/?p=187130)
+
+AI kids content 2025-2026:
+- [FACT] Late Feb 2026 NYT investigation: reviewed 1,000+ videos recommended to young children and found the algorithm pushing bizarre AI-generated videos from channels claiming to teach alphabet/animals; YouTube suspended the five cited channels from YPP (lost ads + YouTube Kids access), removed 3 hyperrealistic videos from Kids app, removed one for child-safety violation. — [Digital Trends](https://www.digitaltrends.com/social-media/investigation-finds-youtube-is-serving-mindless-ai-slop-to-toddlers-and-preschoolers/); [dnyuz (NYT reprint), Feb 26 2026](https://dnyuz.com/2026/02/26/how-a-i-generated-videos-are-distorting-your-childs-youtube-feed/)
+- [FACT] Following a separate report by The 74, YouTube terminated six channels for ToS violations and one for spam. — [The 74](https://www.the74million.org/zero2eight/ai-slop-is-flooding-childrens-media-parents-should-be-very-alarmed/); [Dexerto](https://www.dexerto.com/youtube/youtube-strikes-down-channels-after-investigation-into-bizarre-ai-content-for-kids-3326231/)
+- [FACT] YouTube's realistic-AI disclosure requirement does not cover animated kids videos (a gap critics highlight). — [Digital Trends](https://www.digitaltrends.com/social-media/investigation-finds-youtube-is-serving-mindless-ai-slop-to-toddlers-and-preschoolers/)
+- [FACT] Apr 1, 2026: Fairplay open letter to Neal Mohan and Sundar Pichai, signed by 135+ organizations and 102 experts (incl. Jonathan Haidt, Jenny Radesky), asking YouTube to label all AI content, bar it from YouTube Kids, ban AI-generated MFK content on main YouTube, stop recommending AI content to under-18s, and add an off-by-default parental toggle. Letter claims top AI-slop kids channels earn $4.25M+/year (YouTube disputed that figure as contrary to its policies). — [Fairplay letter PDF](https://fairplayforkids.org/wp-content/uploads/2026/03/YouTube-Letter-AI-Slop.pdf); [Fairplay release](https://fairplayforkids.org/youtube-stop-ai-slop-for-kids-says-letter-from-fairplay-over-200-experts-including-jonathan-haidt/); [Fortune](https://www.fortune.com/2026/04/01/ai-slop-200-organizations-letter-youtube-google); [Fast Company](https://www.fastcompany.com/91519733/youtube-urged-hundreds-experts-protect-kids-ai-slop-videos)
+- [ESTIMATE] Jan 2026 (secondary sources): ~16 large AI-slop channels (~35M subs, ~4.7B lifetime views, est. ~$10M/yr) deleted or stripped under inauthentic-content policy (one account: 11 terminated, content wiped from 6); list derived from Kapwing's top-AI-slop-channels study (Kapwing reviewed 15,000 top channels, found 278 exclusively low-quality AI). A "130,000 channels removed" figure circulates but is unverified. — [OutlierKit](https://outlierkit.com/resources/youtube-ai-slop-crackdown-2026/); [The Next Web](https://thenextweb.com/news/youtube-ai-slop-crackdown-faceless-creators-collateral-damage); [Agentic Brew (130k claim)](https://www.agenticbrew.ai/news/0a65f490-d43b-46dd-b765-79ab3ab05c71/youtube-s-130-000-channel-ai-slop-purge)
+- [ESTIMATE/opinion] Human-made faceless channels report collateral demonetization in the 2026 purge. — [The Next Web](https://thenextweb.com/news/youtube-ai-slop-crackdown-faceless-creators-collateral-damage)
+
+### Inferences
+- A faceless AI-assisted kids channel faces stacked risk: inauthentic-content YPP review, YouTube Kids quality gating (AI limited to "small set" of channels), child-safety policy, and heavy press/advocacy scrutiny. Visible human creative input (original characters, scripts, consistent series IP, educational structure) is the main defensible differentiator.
+- Low RPM + policy risk means AI-volume strategies in kids are both less profitable and more precarious than in adult niches.
+
+### Gaps
+- No official YouTube transparency-report number for AI kids channels removed in 2025-2026.
+- No confirmed YouTube policy change (as of Nov 2026) adopting Fairplay's demands was found.
+
+## 5. Other income for kids channels: licensing, toys, streaming deals, merch
+
+### Takeaway
+The big kids YouTube brands make their real money off-platform: streaming licenses (Netflix, Disney+), toys/consumer products, and corporate exits. Moonbug (CoComelon, Blippi, Little Baby Bum) was bought for ~$3B in 2021; Pinkfong (Baby Shark, Bebefinn) IPO'd in Seoul in Nov 2025.
+
+### Cited Findings
+- [FACT] Little Baby Bum (founded 2011 by the Holder family; 16.4M subs, 17.5B views at the time) was acquired by newly formed Moonbug in Sept 2018; price reported ~$8-11M (estimate). Moonbug raised $145M (Dec 2018) to buy kids IP. — [Tubefilter Sep 2018](https://tubefilter.com/2018/09/14/little-baby-bum-purchased/); [Tubefilter Dec 2018](https://tubefilter.com/2018/12/18/little-baby-bum-moonbug-145-million/)
+- [FACT] July 2020: Moonbug raised $120M and acquired CoComelon and Blippi (network of ~235M subscribers reported). — [Tubefilter Jul 30 2020](https://www.tubefilter.com/2020/07/30/moonbug-raises-120-million-acquires-cocomelon-blippi/amp/); [AWN](https://awn.com/news/moonbug-acquires-youtubes-blippi-and-cocomelon); [Buzzacott](https://www.buzzacott.co.uk/news/moonbug-acquires-cocomelon-and-blippi-to-create-a-youtube-network-with-235-million-subscribers)
+- [FACT] Nov 2021: Candle Media (Kevin Mayer, Tom Staggs; Blackstone-backed) acquired Moonbug for ~$3B. Moonbug financials not public; Candle says it is its most profitable unit (Axios: "the vast majority" of Candle's profits, 2025). — [Variety](https://variety.com/2021/biz/news/moonbug-acquisition-disney-tom-staggs-kevin-mayer-1235124553); [TheWrap](https://www.thewrap.com/cocomelon-moonbug-3-billion-franchise-netflix); [Semafor, Jun 2025](https://www.semafor.com/article/06/18/2025/candle-medias-kevin-mayer-is-pivoting-to-meet-the-streaming-moment)
+- [FACT] CoComelon was on Netflix from 2020; Netflix did not renew; Disney+ takes all seasons (plus future seasons and 8 seasons of Little Angel) from Jan 2027, reportedly "tens of millions of dollars annually" (Bloomberg). Netflix claimed viewership fell ~60% from H1 2023 to H2 2024; a source disputes, saying Disney outbid Netflix. Blippi and CoComelon Lane remain on Netflix. — [Tubefilter May 27 2025](https://www.tubefilter.com/2025/05/27/cocomelon-rights-move-netflix-to-disney-plus/); [Hollywood Reporter](https://www.hollywoodreporter.com/tv/tv-news/cocomelon-move-netflix-disney-1236229955/); [The Streamable](https://thestreamable.com/cocomelon-moving-disney-plus-netflix-2027)
+- [FACT] CoComelon consumer products: toy partnerships (e.g., electronic toys) and a CoComelon x Hello Kitty (Sanrio) collaboration. — [Movieguide](https://www.movieguide.org/?p=582229); [AOL](https://www.aol.com/entertainment/cocomelon-hello-kitty-team-major-051618153.html)
+- [FACT] Pinkfong Company listed on KOSDAQ (403850) Nov 18, 2025, priced at top of range (KRW 38,000; ~KRW 76B / ~$53M raised), shares up ~60% on debut. FY2024 revenue ~KRW 97.4B (+11%), operating profit KRW 18.8B; H1 2025 revenue KRW 45.2B (-2.4%). Bebefinn now ~40% of content revenue vs Baby Shark ~25%; >75% of sales overseas. — [Tubefilter Nov 18 2025](https://www.tubefilter.com/2025/11/18/baby-shark-pinkfong-stock-market-ipo-south-korea/); [Bloomberg Law](https://news.bgov.com/capital-markets/baby-shark-creator-pinkfong-raises-53-million-in-korea-ipo); [The Star](https://www.thestar.com.my/business/business-news/2025/11/18/039baby-shark039-producer-pinkfong-shares-soar-in-south-korea-after-ipo); [Campaign Asia](https://www.campaignasia.com/article/the-rise-and-rise-of-pinkfong-from-kids-earworm-to-stock-market-powerhouse/505967)
+- [FACT] After COPPA, YouTube launched a 3-year $100M fund for original kids content; Kidscreen (Oct 2025) describes kids creators shifting to diversified models (brand partnerships, licensing, multi-platform). — [Kidscreen](https://kidscreen.com/2025/10/27/how-kids-creators-are-making-youtube-work-again/)
+
+### Inferences
+- The playbook of the winners: build a recognizable character IP on YouTube (low RPM but massive reach), then monetize via streaming licenses, consumer products, and M&A. Pinkfong's Bebefinn shows a new YouTube-born IP can overtake a legacy hit within a few years.
+- For a small faceless channel, realistic secondary income is merch/printables/books/apps tied to original characters, and brand deals (subject to FTC endorsement and kids-advertising rules, e.g., CARU), rather than streaming deals.
+
+### Gaps
+- No public revenue numbers for Moonbug/CoComelon YouTube AdSense, Little Baby Bum, or licensing royalties.
+- No data on brand-deal rates for MFK channels or on CARU/ad-disclosure specifics for kids influencer content (not researched).
