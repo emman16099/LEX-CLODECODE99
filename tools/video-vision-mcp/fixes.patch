@@ -1,0 +1,40 @@
+diff --git a/src/lib/transcriber.ts b/src/lib/transcriber.ts
+index 6e434bb..61161eb 100644
+--- a/src/lib/transcriber.ts
++++ b/src/lib/transcriber.ts
+@@ -43,7 +43,7 @@ export async function getTranscriber(): Promise<any> {
+     initPromise = (async () => {
+       const device = await getBestDevice();
+       log(`Loading Whisper on ${device === 'webgpu' ? 'GPU — nice, this will be fast' : 'CPU — solid, reliable, slightly caffeinated'}...`);
+-      const p = await pipeline('automatic-speech-recognition', 'Xenova/whisper-base', { device });
++      const p = await pipeline('automatic-speech-recognition', 'Xenova/whisper-base', { device, dtype: 'q8' });
+       transcriptionPipeline = p;
+       return p;
+     })().catch(err => {
+@@ -60,7 +60,25 @@ export async function transcribeFile(
+   options: { language?: string; returnTimestamps?: boolean }
+ ): Promise<TranscriptResult> {
+   const t = await getTranscriber();
+-  const result = await t(audioPath, {
++  // Node has no AudioContext, so transformers.js cannot decode a file path.
++  // extractAudio() writes 16 kHz mono 16-bit PCM WAV: read the "data" chunk into Float32 samples.
++  const buf = await fs.readFile(audioPath);
++  let off = 12;
++  let samples: Float32Array | null = null;
++  while (off + 8 <= buf.length) {
++    const id = buf.toString('ascii', off, off + 4);
++    const size = buf.readUInt32LE(off + 4);
++    if (id === 'data') {
++      const end = Math.min(off + 8 + size, buf.length);
++      const n = Math.floor((end - off - 8) / 2);
++      samples = new Float32Array(n);
++      for (let i = 0; i < n; i++) samples[i] = buf.readInt16LE(off + 8 + i * 2) / 32768;
++      break;
++    }
++    off += 8 + size + (size % 2);
++  }
++  if (!samples) throw new Error('Could not read audio samples from ' + audioPath);
++  const result = await t(samples, {
+     return_timestamps: options.returnTimestamps ?? true,
+     language: options.language ?? null,
+     chunk_length_s: 30,
