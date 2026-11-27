@@ -157,7 +157,7 @@ Shot size: **W** = wide (whole body/room), **M** = medium, **C** = close-up, **E
 | Claim in script | Source |
 |---|---|
 | CAD team checks the plan; CNC cuts every part; parts are labelled | Lexie Wood process as described in the lexiewood-copy-brain skill. Confirm it's true for this job |
-| Level base, trimmed toe kick, clamps, fixed to the wall, fronts adjusted one by one | ⬜ **Confirm Lexie Wood really installs this way.** Drop any step you don't do |
+| Level base, trimmed toe kick, clamps, fixed to the wall, fronts adjusted one by one | ✅ USER confirmed, 2026-11-27 |
 | "Most floors and walls aren't straight" | General knowledge, no number given |
 | CTA | ⬜ Pick from `CTA_and_Proof_Library.md` Part A. I couldn't read the library here |
 | Proof (photo, number, testimonial) | ⬜ None used. Add a ✅ row from the library if you have one |
