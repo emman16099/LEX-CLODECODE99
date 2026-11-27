@@ -27,6 +27,40 @@ Two ideas shape every step:
    go stale in months. Human tips (curiosity, clear promise, story) last for
    years. Tag every lesson so the agent knows which kind it is.
 
+## What "learning" means here
+
+**Learning from a video = pulling out an idea you can reuse on a different
+topic, explaining why it works, writing it down with proof, and later checking
+that it works for us.** If the last part never happens, it was note-taking,
+not learning.
+
+| The agent does this… | Learning? |
+|---|---|
+| Watches or reads the whole video | No: that's looking |
+| Writes a summary ("he talked about hooks") | No: that's a book report |
+| Copies the creator's script | No: that's copying |
+| Saves 50 tips in a file | No: that's collecting |
+| Pulls out a reusable idea, explains why, applies it to our business, grades the proof, plans a test | Yes |
+
+### The 5 stairs of learning
+
+1. **Remember**: what did they say?
+2. **Understand**: why does it work on a viewer's attention?
+3. **Use**: apply it to our business with a real example.
+4. **Judge**: should we believe it? Give an evidence grade (A–D).
+5. **Prove**: did it work on our own posts or ads?
+
+A lesson card may be saved only after stair **4**. A lesson enters the
+"Proven for us" part of the rulebook only after stair **5** (see step 7).
+
+### A script is only half the video
+
+A transcript gives the **words** only. It misses on-screen text, the first
+frame, cuts, pacing, camera moves, and what is shown with hands or objects.
+- Lesson about **words** (hook lines, story, CTA) → the transcript is enough (cheap).
+- Lesson about **looks** (editing, text hooks, first frame) → "watch" the video
+  with a vision tool (costs more). Never guess the visuals from the words.
+
 ## The 7 learning steps
 
 ### 1. Pick the question
@@ -49,7 +83,25 @@ transcript or existing analysis first, full "watch" only when the lesson is
 visual (editing, on-screen text, camera framing). Do not download or re-upload
 other people's videos; use the tools' transcripts and analyses.
 
-### 4. Write lesson cards
+### 4. Read the skeleton, then write lesson cards
+Don't read a script top to bottom like a story. Mark its skeleton first:
+
+| Part | Ask |
+|---|---|
+| **Hook** (first 1–2 lines) | What made people stop? Which hook type? |
+| **Lock-in** (next 2–3 lines) | How did they promise it's worth staying? |
+| **Body** | How many sections, and what's in each? |
+| **Re-hooks** | Where did they give a new reason to keep watching? |
+| **Payoff** | Did they deliver what the hook promised? |
+| **CTA** | What did they ask the viewer to do? |
+
+Then ask: *which part of this skeleton could be reused on a different topic?*
+That reusable part is the lesson.
+
+Every video gives two kinds of lesson. Write them separately:
+- **What they SAY** (their advice): an opinion until tested.
+- **What they DO** (how this video is built): backed by its views and outlier score.
+
 One card per idea, using `references/lesson-card-template.md`.
 Save to `knowledge/lessons/<topic>--<short-name>.md`.
 Write the *pattern* in your own words. A short quote (one sentence) is fine
@@ -63,6 +115,16 @@ Watch for red flags: the "tip" is really a funnel ("comment HOOKS for my
 prompt"), the creator sells a course about it, numbers have no source,
 or the advice is about an old version of the app.
 
+### 5b. The "did I really learn it?" check
+Before saving a card, answer all five. If any answer is missing, don't save it
+as a lesson. Tell the user what is missing instead of pretending.
+
+1. State the lesson **in my own words**, in one sentence.
+2. Explain **why** it works.
+3. Apply it to **our business** with a real example.
+4. Give a **proof grade** (A–D) and say why.
+5. Say **how we'd test it** and which number decides.
+
 ### 6. Connect to what the agent knows
 Before saving, search `knowledge/` for cards on the same idea.
 - Same idea → merge into the older card, add the new source, raise the grade if earned.
@@ -70,7 +132,10 @@ Before saving, search `knowledge/` for cards on the same idea.
   and add a test to `knowledge/TEST-QUEUE.md` so real numbers can settle it.
 
 ### 7. Promote, or queue for testing
-- Level **A or B** → add a one-line rule to `knowledge/RULEBOOK.md`, linking the card.
+- Level **A** (stair 5: proven on our own content) → add to the **Proven for us**
+  section of `knowledge/RULEBOOK.md`.
+- Level **B** → add to the **Strong bets** section of the rulebook (use it, but
+  it still needs our own test), *and* add it to `knowledge/TEST-QUEUE.md`.
 - Level **C** → add to `knowledge/TEST-QUEUE.md` with how to test it.
 - Level **D** → keep the card (so we don't re-study it) but never promote it.
 
@@ -84,7 +149,8 @@ Finish with a short report in plain words a 10-year-old could follow:
 ```
 Question: <the question>
 Studied: <N> videos from <M> creators (<platforms>)
-New lessons: <list, each with its grade>
+New lessons: <list, each with its grade and which stair it reached>
+Not learned yet: <ideas that failed the 5-question check, and what's missing>
 Merged into old lessons: <list>
 Conflicts found: <list, or "none">
 Added to rulebook: <list>

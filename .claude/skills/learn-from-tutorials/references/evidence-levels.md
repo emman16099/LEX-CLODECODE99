@@ -2,8 +2,8 @@
 
 | Level | Name | What counts | What the agent does with it |
 |---|---|---|---|
-| **A** | Tested by us | We tried it on our own posts/ads and the numbers moved (and we compared against a version without it) | Rulebook. Use by default. |
-| **B** | Seen in many winners | The pattern shows up in 5+ over-performing videos from 3+ different creators in the last 12 months | Rulebook, marked "not yet tested by us". |
+| **A** | Tested by us | We tried it on our own posts/ads and the numbers moved (and we compared against a version without it) | Rulebook → "Proven for us". Use by default. |
+| **B** | Seen in many winners | The pattern shows up in 5+ over-performing videos from 3+ different creators in the last 12 months | Rulebook → "Strong bets", and test queue. Use it, but test it. |
 | **C** | One expert, with a reason | A credible creator explains it with an example or a number we can check | Test queue. Can try it, can't rely on it. |
 | **D** | Opinion or pitch | No example, no number, "trust me", or it is the bait for a course / DM funnel | Keep the card, never promote. |
 

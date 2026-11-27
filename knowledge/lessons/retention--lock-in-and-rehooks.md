@@ -2,6 +2,9 @@
 topic: retention
 purpose_step: Hold
 evidence: C
+stair: 4
+lesson_type: says
+learned_from: words
 shelf_life: lasting
 platforms: [tiktok, reels, shorts]
 first_learned: 2026-11-27

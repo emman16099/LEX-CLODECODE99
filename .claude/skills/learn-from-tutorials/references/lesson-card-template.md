@@ -8,6 +8,9 @@ Copy this into `knowledge/lessons/<topic>--<short-name>.md`.
 topic: hooks            # see CURRICULUM.md
 purpose_step: Stop      # Stop | Hold | Pay back | Move
 evidence: C             # A | B | C | D  (see evidence-levels.md)
+stair: 4                # 1 Remember | 2 Understand | 3 Use | 4 Judge | 5 Prove (save only at 4+)
+lesson_type: says       # says (their advice) | does (how their video is built)
+learned_from: words     # words (transcript was enough) | looks (needed a vision "watch")
 shelf_life: lasting     # lasting (human nature) | platform (may expire)
 platforms: [tiktok, reels]
 first_learned: 2026-11-27

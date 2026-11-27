@@ -2,6 +2,9 @@
 topic: hooks
 purpose_step: Stop
 evidence: C
+stair: 4
+lesson_type: says
+learned_from: words
 shelf_life: lasting      # "be specific" is human nature; placement tips are platform
 platforms: [tiktok, reels, shorts]
 first_learned: 2026-11-27
