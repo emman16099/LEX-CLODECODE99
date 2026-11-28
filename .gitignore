@@ -1,0 +1,4 @@
+reels/*
+!reels/.gitkeep
+reviews/*/frames/
+__pycache__/
